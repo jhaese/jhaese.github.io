@@ -17,6 +17,7 @@
             --accent: #126ea8;
             --background-color: #ffffffff;
             --text-color: #333;
+            --link-color: #082c92;
         }
         
         * {
@@ -111,6 +112,24 @@
             margin-bottom: 1rem;
             font-weight: 300;
         }
+
+        a {
+        color: var(--link-color);
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: var(--primary-color); /* no purple */
+        }
+
+        a:hover {
+        color: var(--secondary-color); /* or accent if you prefer */
+        }
+
+        a:active {
+        color: var(--secondary-color);
+        }
+
         
         .justified {
             text-align: justify;
