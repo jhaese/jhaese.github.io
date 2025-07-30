@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jérémie Haese - Academic Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+<style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent: #126ea8;
+            --background-color: #ffffffff;
+            --text-color: #333;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2rem;
+        }
+        
+        .profile-header {
+            position: relative;
+            height: 250px;
+            overflow: visible;
+            margin-bottom: 1rem;
+        }
+        
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            bottom: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: -2px;
+            font-weight: 100;
+            font-style: normal;
+            color: var(--secondary-color);
+            margin: 5rem 0 0.5rem;
+            position: relative;
+            z-index: 5;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-family: 'times', serif;
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+            font-weight: 300;
+        }
+          
+        h5 {
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--meta);
+            margin-bottom: 0rem;
+            font-weight: 300;
+        }
+                
+        p {
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .justified {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .research-list {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        
+        .research-list li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1rem;
+            text-align: justify;
+        }
+
+        .research-list li:before {
+            content: "→ ";
+            position: absolute;
+            left: -0.5rem;
+            color: var(--accent);
+        }
+        
+        .contact {
+            text-align: center;
+            margin-top: 2rem;
+            color: #515c5d;
+        }
+        
+        .social-links {
+            text-align: right;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-left: 0.75rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .pdf-preview {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .profile-header {
+                height: 200px;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+                bottom: -60px;
+            }
+            
+            header {
+                padding-bottom: 4rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+                margin-top: 4rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .social-links {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .social-links a {
+                margin: 0 0.5rem;
+            }
+            
+            .pdf-preview {
+                height: 300px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .profile-header {
+                height: 150px;
+            }
+            
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+                bottom: -50px;
+            }
+            
+            header {
+                padding-bottom: 3rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                margin-top: 3.5rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .pdf-preview {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <img src="banner.jpg" alt="Background" class="background-image">
+                <img src="id.jpg" alt="Your Name" class="profile-picture">
+            </div>
+            <h1>Jérémie Haese</h1>
+            <h5>PhD Candidate in Management at <a href="https://www.digital-markets.ch" target="_blank">Digital Market Lab</a></h5>
+            <h5><b>Department of Strategy, Globalization and Society</b></h5>
+            <h5>University of Lausanne (Faculty of Business and Economics)</h5>
+        </header>
+
+        <section class="section">
+            <h2>About</h2>
+            <div class="justified">
+            <p>I am a PhD Candidate in Management in the Strategy Department at HEC Lausanne. My research centers on the interplay between competition and technology, specifically exploring this dynamic's policy and societal implications.</p>
+            <p>I completed my undergraduate studies in Economics and Management at the Ecole Normale Supérieure de Paris-Saclay and the University Paris 1 Panthéon-Sorbonne. I hold a master's degree in Network Industries and Digital Economics from the University Paris Dauphine - PSL and a master's degree in Corporate Finance from the University Paris 1 Panthéon-Sorbonne.</p>
+            <p>Over the past years, I have lived and worked in four countries (France, Colombia, Ireland, and Switzerland), gaining experience in various industries, from the financial department of a waste management company to investment banking.</p>
+            <p> I am a member of the <a href="https://www.data-economy.org" target="_blank">Digital Economy Project</a>.</p>
+            </div>
+        </section>
+
+        <div class="social-links">
+            <a href="https://x.com/yourusername" target="_blank">X</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="https://drive.google.com/file/d/1heXMMwB9uCaw2iNvhXvgbIo_jECm5uHa/view?usp=sharing" target="_blank">CV</a>
+        </div>
+
+        <section class="section">
+            <h2>Publications</h2>
+            <ul class="research-list">
+                <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4946238">Open at the Core: Moving from Proprietary Technology to Building a Product on Open Source Software</a> (with <a href="http://wwww.christian-peukert.com"> Christian Peukert</a>), forthcoming in <i>Management Science</i>.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Working Papers</h2>
+            <ul class="research-list">
+                <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4807979">AI and the Dynamic Supply of Training Data</a> (with <a href="http://wwww.christian-peukert.com"> Christian Peukert</a>, Florian Abeillon, <a href="http://kaiserfranziska.com/"> Franziska Kaiser</a>, and  <a href="https://www.alexander-staub.com/"> Alexander Staub</a>)</li>
+                <li>Building Two-Sided Platforms: Advertising, Network Effects, and Early-Stage Dynamics (with <a href="https://www.som.lmu.de/isto/en/institute/contact-page/tobias-kretschmer-e0fe16a3.html"> Tobias Kretschmer</a> and <a href="http://wwww.christian-peukert.com"> Christian Peukert</a>)
+</li>
+                <li>Behind the Camera and on the Screen: Gender in Movies
+</li>
+<li>Standing on the Shoulders of Dwarfs: Dependencies in AI Open Source Software  (with <a href="http://wwww.christian-peukert.com"> Christian Peukert</a>)</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Miscellaneous</h2>
+            <iframe src="https://drive.google.com/file/d/1DwkEgAriQS8y47sIXqEcHsuFxKYjcpjV/view" class="pdf-preview"></iframe>
+        </section>
+
+        <footer class="contact">
+            <p>jeremie.haese 'at' unil.ch</p>
+        </footer>
+    </div>
+</body>
+</html>
